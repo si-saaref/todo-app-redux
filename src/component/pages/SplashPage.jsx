@@ -1,11 +1,15 @@
 import { useNavigate } from "react-router";
 import useForm from "../useForm";
+import * as action from "../../config/redux/name/actions";
+import { useDispatch } from "react-redux";
 
 export default function SplashPage() {
   const navigate = useNavigate();
   const { value, handleChange } = useForm();
+  const dispatch = useDispatch();
 
   const handleSubmit = () => {
+    dispatch(action.addUser(value))
     // alert(value);
     // navigate("/todo");
   }

@@ -1,0 +1,1 @@
+export const nameRootSelector = (state) => state.userName

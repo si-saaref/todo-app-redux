@@ -1,7 +1,8 @@
 import { combineReducers } from "redux";
+import userNameReducer from "./name/reducer";
 
 const reducer = combineReducers({
-  userName
+  userName: userNameReducer
 });
 
 export default reducer;
