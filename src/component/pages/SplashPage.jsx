@@ -11,7 +11,7 @@ export default function SplashPage() {
   const handleSubmit = () => {
     dispatch(action.addUser(value))
     // alert(value);
-    // navigate("/todo");
+    navigate("/todo");
   }
 
   return (

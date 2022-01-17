@@ -11,7 +11,7 @@ function App() {
       <PersistGate loading={null} persistor={persistor}>
         <BrowserRouter>
           <Routes>
-            <Route path="/login" element={<SplashPage />} />
+            <Route path="/" element={<SplashPage />} />
             <Route path="/todo" element={<TodoPage />} />
           </Routes>
         </BrowserRouter>
