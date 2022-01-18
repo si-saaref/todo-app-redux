@@ -49,14 +49,14 @@ export default function TodoModal({
   return (
     <>
       <Modal>
-        <div className="">
-          <h2>What do you wanna do? </h2>
-          <input type="text" name="todo" id="todo" value={value} onChange={handleChange} className="border-2 rounded-lg  min-w-fit" />
+        <div className="px-8 pt-4">
+          <h2 className="text-lg" >What do you wanna do? </h2>
+          <input type="text" name="todo" id="todo" value={value} onChange={handleChange} className="border-2 border-slate-300 rounded-lg w-full my-1.5 px-1.5 py-0.5" />
           <div className="absolute right-5 bottom-5 flex gap-4">
             <button onClick={closeModal} className="rounded-md text-white bg-red-600 px-2">
               Cancel
             </button>
-            <button onClick={!isUpdate ? handleAddTodo : handleUpdateTodo} className="rounded-md text-white bg-red-600 px-2">
+            <button onClick={!isUpdate ? handleAddTodo : handleUpdateTodo} className="rounded-md text-white bg-green-600 px-2">
               {!isUpdate ? 'Add' : 'Update'}
             </button>
           </div>
