@@ -1,7 +1,7 @@
 import * as actionName from "./string";
 
 const todoInitialState = {
-  todos: []
+  todos: ['Makan', 'Ayam']
 };
 
 const initialState = {
@@ -33,6 +33,14 @@ const todoReducer = (state = initialState, action) => {
       return {
         ...state,
         action: action.type
+      };
+    },
+    [actionName.RESET_TODO]: () => {
+      console.log('Cek data', action);
+      return {
+        ...state,
+        action: action.type,
+        todos: action.payload
       };
     },
     DEFAULT: () => state

@@ -20,3 +20,10 @@ export const updateTodo = (todo) => {
     payload: todo
   };
 };
+
+export const resetTodo = (payload) => {
+  return {
+    type: actionName.RESET_TODO,
+    payload
+  };
+};
