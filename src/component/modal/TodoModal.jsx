@@ -42,6 +42,8 @@ export default function TodoModal({
     // console.log(value);
     dispatch(action.updateTodo({ index, value }));
     setOpenModal(false)
+    setIndex(null);
+    setTodo("");
   };
 
   return (
