@@ -1,7 +1,7 @@
 import * as actionName from "./string";
 
 const todoInitialState = {
-  todos: ['Makan', 'Ayam']
+  todos: []
 };
 
 const initialState = {

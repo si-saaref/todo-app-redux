@@ -10,6 +10,10 @@
   }
 }
 
-.translate-position {
+.translate-position-lg {
   transform: translate(-50%, -50%);
+}
+
+.translate-position-sm {
+  transform: translate(-5%, -50%);
 }

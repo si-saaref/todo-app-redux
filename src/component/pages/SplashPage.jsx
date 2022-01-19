@@ -47,8 +47,8 @@ export default function SplashPage() {
   return (
     <div className="">
       <div className={`bg-Coffe-bg bg-cover h-screen ${blur} duration-50`} id="background"></div>
-      <div className={`absolute right-0 top-1/2 translate-position items-center ${visibleText}`} id="textForm">
-        <div className="bg-semi-slate rounded-xl p-8 font-inter text-xl leading-relaxed">
+      <div className={`absolute right-0 top-1/2 translate-position-sm md:-translate-x-1/2 md:-translate-y-1/2 items-center ${visibleText}`} id="textForm">
+        <div className="bg-semi-slate rounded-xl p-3 md:p-8 font-inter text-base sm:text-xl leading-relaxed">
           <h1 className="text-3xl mb-2.5">Hello, Fellasss!</h1>
           <h2>Don't let your activities pass you</h2>
           <h2>because you forget them</h2>
@@ -56,8 +56,8 @@ export default function SplashPage() {
           <button className="bg-white rounded-lg py-0.5 px-2 mt-4 font-raleway hover:font-semibold hover:border-2 hover:border-slate-900" onClick={handleVisibleForm}>Lanjut</button>
         </div>
       </div>
-      <div className={`absolute right-0 top-1/2 h-screen justify-center items-center translate-position ${visibleForm}`} id="loginForm">
-        <div className="flex flex-col gap-7 w-96 h-56 bg-backdrop text-white rounded-2xl p-6 border-2">
+      <div className={`absolute right-0 top-1/2 h-screen justify-center items-center translate-position-sm md:-translate-x-1/2 md:-translate-y-1/2 ${visibleForm}`} id="loginForm">
+        <div className="flex flex-col gap-7 w-80 md:w-96 h-48 md:h-56 bg-backdrop text-white rounded-2xl p-6 border-2">
           <h1 className="font-raleway text-2xl">Let me know your name</h1>
           <div className="flex flex-col gap-5">
             <input type="text" name="name" id="name" required value={value} onChange={handleChange} className="rounded-3xl px-3 py-1 text-black" autoComplete="off" />
