@@ -49,7 +49,7 @@ export default function SplashPage() {
       <div className={`bg-Coffe-bg bg-cover h-screen ${blur} duration-50`} id="background"></div>
       <div className={`absolute right-0 top-1/2 translate-position-sm md:-translate-x-1/2 md:-translate-y-1/2 items-center ${visibleText}`} id="textForm">
         <div className="bg-semi-slate rounded-xl p-3 md:p-8 font-inter text-base sm:text-xl leading-relaxed">
-          <h1 className="text-3xl mb-2.5">Hello, Fellasss!</h1>
+          <h1 className="text-3xl mb-2.5">Hello, Fellassss!</h1>
           <h2>Don't let your activities pass you</h2>
           <h2>because you forget them</h2>
           <h2>From now on go note all of your activities</h2>
