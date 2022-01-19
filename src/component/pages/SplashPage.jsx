@@ -53,7 +53,7 @@ export default function SplashPage() {
           <h2>Don't let your activities pass you</h2>
           <h2>because you forget them</h2>
           <h2>From now on go note all of your activities</h2>
-          <button className="bg-white rounded-lg py-0.5 px-2 mt-4 font-raleway hover:font-semibold hover:border-2 hover:border-slate-900" onClick={handleVisibleForm}>Lanjut >>></button>
+          <button className="bg-white rounded-lg py-0.5 px-2 mt-4 font-raleway hover:font-semibold hover:border-2 hover:border-slate-900" onClick={handleVisibleForm}>Lanjut</button>
         </div>
       </div>
       <div className={`absolute right-0 top-1/2 h-screen justify-center items-center translate-position ${visibleForm}`} id="loginForm">
