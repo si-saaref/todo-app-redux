@@ -34,11 +34,17 @@ export default function TodoModal({
   };
 
   const handleAddTodo = () => {
-    setOpenModal(null);
+    if (value === "") {
+      return;
+    }
     dispatch(action.addTodo(value));
+    setOpenModal(null);
   };
 
   const handleUpdateTodo = () => {
+    if (value === "") {
+      return;
+    }
     // console.log(value);
     dispatch(action.updateTodo({ index, value }));
     setOpenModal(false)
@@ -51,7 +57,7 @@ export default function TodoModal({
       <Modal>
         <div className="px-8 pt-4">
           <h2 className="text-lg" >What do you wanna do? </h2>
-          <input type="text" name="todo" id="todo" value={value} onChange={handleChange} className="border-2 border-slate-300 rounded-lg w-full my-1.5 px-1.5 py-0.5" />
+          <input type="text" name="todo" id="todo" value={value} onChange={handleChange} className="border-2 border-slate-300 rounded-lg w-full my-1.5 px-1.5 py-0.5" autoComplete="off" />
           <div className="absolute right-5 bottom-5 flex gap-4">
             <button onClick={closeModal} className="rounded-md text-white bg-red-600 px-2 py-0.5">
               Cancel
