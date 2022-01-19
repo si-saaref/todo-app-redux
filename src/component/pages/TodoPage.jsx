@@ -46,7 +46,7 @@ export default function TodoPage() {
             <h1 className="self-start text-xl md:text-2xl font-raleway">
               Haii <span>{userName}</span>
             </h1>
-            <button className="hover:bg-slate-500 px-4 duration-300 rounded-lg" onClick={handleLogOut}>
+            <button className="hover:bg-slate-400 px-4 duration-300 rounded-lg" onClick={handleLogOut}>
               <GrLogout />
             </button>
           </div>

@@ -9,3 +9,7 @@
     --semi-transparent: 55, 65, 81, .6;
   }
 }
+
+.translate-position {
+  transform: translate(-50%, -50%);
+}
