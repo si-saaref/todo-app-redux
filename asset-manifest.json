@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/todo-app-redux/static/css/main.508e3f27.css",
-    "main.js": "/todo-app-redux/static/js/main.a8605bda.js",
+    "main.js": "/todo-app-redux/static/js/main.300bac1d.js",
     "static/js/787.d3c9a03b.chunk.js": "/todo-app-redux/static/js/787.d3c9a03b.chunk.js",
     "static/media/Coffe-bg.jpg": "/todo-app-redux/static/media/Coffe-bg.5003997b2484311dec92.jpg",
     "index.html": "/todo-app-redux/index.html",
     "main.508e3f27.css.map": "/todo-app-redux/static/css/main.508e3f27.css.map",
-    "main.a8605bda.js.map": "/todo-app-redux/static/js/main.a8605bda.js.map",
+    "main.300bac1d.js.map": "/todo-app-redux/static/js/main.300bac1d.js.map",
     "787.d3c9a03b.chunk.js.map": "/todo-app-redux/static/js/787.d3c9a03b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.508e3f27.css",
-    "static/js/main.a8605bda.js"
+    "static/js/main.300bac1d.js"
   ]
 }
