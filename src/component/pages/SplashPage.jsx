@@ -14,11 +14,11 @@ export default function SplashPage() {
 
   const setUpBlur = useCallback(function () {
     setBlur('blur-sm');
-  });
+  }, []);
 
   const setNoneBlur = useCallback(function () {
     setBlur('');
-  });
+  }, []);
 
   useEffect(() => {
     const textDiv = document.getElementById('textForm');
@@ -28,21 +28,21 @@ export default function SplashPage() {
     textDiv.addEventListener('mouseout', setNoneBlur);
     loginDiv.addEventListener('click', setUpBlur);
     bgDiv.addEventListener('click', setNoneBlur, true);
-  })
+  });
 
   const handleSubmit = () => {
     if (value === "") {
       return;
     }
-    dispatch(action.addUser(value))
+    dispatch(action.addUser(value));
     navigate("/todo");
     // alert(value); m m
   };
 
   const handleVisibleForm = () => {
     setVisibleText('hidden');
-    setVisibleForm('flex')
-  }
+    setVisibleForm('flex');
+  };
 
   return (
     <div className="">
