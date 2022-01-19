@@ -1,5 +1,5 @@
 import { Provider } from "react-redux";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes, HashRouter } from "react-router-dom";
 import { PersistGate } from "redux-persist/integration/react";
 import SplashPage from "./component/pages/SplashPage";
 import TodoPage from "./component/pages/TodoPage";
@@ -9,12 +9,12 @@ function App() {
   return (
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
-        <BrowserRouter>
+        <HashRouter>
           <Routes>
             <Route path="/" element={<SplashPage />} />
             <Route path="/todo" element={<TodoPage />} />
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
       </PersistGate>
     </Provider>
   );
